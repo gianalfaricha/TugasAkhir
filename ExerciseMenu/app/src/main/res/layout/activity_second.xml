@@ -41,19 +41,21 @@
                 <Button
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_margin="10dp"
+                    android:layout_margin="30dp"
                     android:id="@+id/gmbrpersegi"
                     android:text="Persegi"
                     android:background="@drawable/persegi">
+                    android:onClick="showpopup1"
                 </Button>
 
                 <Button
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_marginLeft="30dp"
+                    android:layout_margin="30dp"
                     android:id="@+id/gmbrlingkaran"
                     android:text="Lingkaran"
-                    android:background="@drawable/lingkaran">
+                    android:background="@drawable/lingkaran"
+                    android:onClick="showpopup2">
                 </Button>
             </TableRow>
 
@@ -67,16 +69,18 @@
                     android:layout_margin="10dp"
                     android:id="@+id/gmbrpersegi2"
                     android:text="Persegi Panjang"
-                    android:background="@drawable/persegi">
+                    android:background="@drawable/persegi"
+                    android:onClick="showpopup3">
                 </Button>
 
                 <Button
                     android:layout_width="130dp"
                     android:layout_height="130dp"
-                    android:layout_marginLeft="30dp"
+                    android:layout_margin="5dp"
                     android:id="@+id/gmbrsegitiga"
                     android:text="Segitiga"
-                    android:background="@drawable/segitiga">
+                    android:background="@drawable/segitiga"
+                    android:onClick="showpopup4">
                 </Button>
             </TableRow>
         </TableLayout>
@@ -96,7 +100,8 @@
                     android:layout_marginLeft="140dp"
                     android:id="@+id/gmbrjajargenjang"
                     android:text="Trapesium"
-                    android:background="@drawable/jajargenjang">
+                    android:background="@drawable/jajargenjang"
+                    android:onClick="showpopup5">
                 </Button>
             </TableRow>
 
