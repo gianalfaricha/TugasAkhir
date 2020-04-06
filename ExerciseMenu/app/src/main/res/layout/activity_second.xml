@@ -29,6 +29,78 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.062" />
 
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/gmbrpersegi"
+                    android:text="Persegi"
+                    android:background="@drawable/persegi">
+                </Button>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/gmbrlingkaran"
+                    android:text="Lingkaran"
+                    android:background="@drawable/lingkaran">
+                </Button>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/gmbrpersegi2"
+                    android:text="Persegi Panjang"
+                    android:background="@drawable/persegi">
+                </Button>
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/gmbrsegitiga"
+                    android:text="Segitiga"
+                    android:background="@drawable/segitiga">
+                </Button>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="140dp"
+                    android:id="@+id/gmbrjajargenjang"
+                    android:text="Trapesium"
+                    android:background="@drawable/jajargenjang">
+                </Button>
+            </TableRow>
+
+        </TableLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
