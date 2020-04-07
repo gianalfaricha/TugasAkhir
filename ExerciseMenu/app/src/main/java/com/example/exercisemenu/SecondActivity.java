@@ -16,7 +16,7 @@ public class SecondActivity extends AppCompatActivity implements PopupMenu.OnMen
         setContentView(R.layout.activity_second);
     }
 
-    public void showpopup1 (View v){
+    public void showpopup1(View v){
         PopupMenu popup = new PopupMenu(this, v);
         popup.setOnMenuItemClickListener(this);
         popup.inflate(R.menu.menu1);
