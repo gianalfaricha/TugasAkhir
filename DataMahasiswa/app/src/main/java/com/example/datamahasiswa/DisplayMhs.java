@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
 public class DisplayMhs extends AppCompatActivity {
     int from_Where_I_Am_Coming = 0;
@@ -26,8 +25,6 @@ public class DisplayMhs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_mhs);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         nomhs = (EditText) findViewById(R.id.editTextNim);
         nama = (EditText) findViewById(R.id.editTextName);
@@ -82,18 +79,16 @@ public class DisplayMhs extends AppCompatActivity {
 
     public void run(View view)
     {
-        if ( (nomhs.getText().toString().equals("") ||
-                nama.getText().toString().equals("") ||
+        if (nomhs.getText().toString().equals("")||
+                nama.getText().toString().equals("")||
                 phone.getText().toString().equals("")){
-        Toast.makeText(getApplicationContext(),
-                "Data Harus Diisi Semua !", Toast.LENGTH_LONG).show();
-    }else {
+            Toast.makeText(getApplicationContext(), "Data Harus Diisi Semua !",Toast.LENGTH_LONG).show();
+        } else {
             mydb.insertContact(nomhs.getText().toString(), nama.getText().toString(), phone.getText().toString());
-            Toast.makeText(getApplicationContext(),
-                    "Insert data berhasil", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Insert Data Berhasil",Toast.LENGTH_LONG).show();
 
-        Intent i = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(i);
-    }
+            Intent i = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(i);
+        }
     }
 }
