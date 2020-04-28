@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView1"
+    tools:context=".display_mhs">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:id="@+id/judul1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Tambah Data"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EditTextNim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/judul1"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/background"
+            android:hint="@string/nim"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:id="@+id/EditTextNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EditTextNim"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background"
+            android:hint="@string/name"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        <EditText
+            android:id="@+id/EditTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/EditTextNama"
+            android:background="@drawable/background"
+            android:hint="@string/phone"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        <EditText
+            android:id="@+id/EditTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/EditTextPhone"
+            android:background="@drawable/background"
+            android:hint="@string/email"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        <EditText
+            android:id="@+id/EditTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/EditTextEmail"
+            android:hint="@string/address"
+            android:background="@drawable/background"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EditTextAddress"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="137dp"
+            android:layout_marginLeft="137dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="49dp"
+            android:onClick="run"
+            android:text="@string/save"
+            />
+
+    </RelativeLayout>
+
+
+</ScrollView>
