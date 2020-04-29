@@ -29,7 +29,8 @@
 
     </RelativeLayout>
 
-    <com.google.android.meterial.floatingactionbutton.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
@@ -38,8 +39,7 @@
         android:src="@drawable/ic_add"
         app:elevation="6dp"
         app:fabSize="normal"
-        tools:ignore="MissingConstraints">>
-
-    </com.google.android.meterial.floatingactionbutton.FloatingActionButton>
+        tools:ignore="MissingConstraints">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

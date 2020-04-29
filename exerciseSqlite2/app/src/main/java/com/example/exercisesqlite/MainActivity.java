@@ -1,4 +1,3 @@
-
 package com.example.exercisesqlite;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,7 +17,7 @@ import android.widget.SearchView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
- public final static String EXTRA_MESSAGE = "MESSAGE";
+    public final static String EXTRA_MESSAGE = "MESSAGE";
     private ListView obj;
     DBHelper mydb;
     ArrayList<String> listItem;
