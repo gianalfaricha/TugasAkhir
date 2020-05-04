@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton mLimaRadio;
     private RadioButton mTigaPuluhRadio;
     private RadioButton mJamRadio;
-    private RadioButton mTimeRadioGroup;
+    private RadioGroup mTimeRadioGroup;
     public int mChangeTime = 60;
 
     @Override
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         mLimaRadio=(RadioButton) findViewById(R.id.radio1);
         mTigaPuluhRadio=(RadioButton)findViewById(R.id.radio2);
         mJamRadio=(RadioButton)findViewById(R.id.radio3);
-        mTimeRadioGroup=(RadioGroup)findViewById(R.id.radioGroup);
+        mTimeRadioGroup = (RadioGroup) findViewById(R.id.radioGroup);
 
         mUnsetBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         mSetBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int mRadioID = mTimeRadioGroup.getCheckRadioButtonId();
+                int mRadioID = mTimeRadioGroup.getCheckedRadioButtonId();
                 if (mMenitRadio.getId()==mRadioID) {mChangeTime=60;}
                 else if(mLimaRadio.getId()==mRadioID) {mChangeTime=5*60;}
                 else if(mTigaPuluhRadio.getId()==mRadioID) {mChangeTime=30*60;}

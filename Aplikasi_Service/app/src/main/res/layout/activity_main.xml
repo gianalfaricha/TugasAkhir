@@ -33,7 +33,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.125"
         tools:ignore="MissingConstraints">
@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:text="@string/menit"
             tools:layout_editor_absoluteX="70dp"
-            tools:layout_editor_absoluteY="180dp" />
+            tools:layout_editor_absoluteY="180dp"/>
 
         <RadioButton
             android:id="@+id/radio1"
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:text="@string/menit5"
             tools:layout_editor_absoluteX="33dp"
-            tools:layout_editor_absoluteY="204dp" />
+            tools:layout_editor_absoluteY="204dp"/>
 
         <RadioButton
             android:id="@+id/radio2"
@@ -60,16 +60,15 @@
             android:layout_height="wrap_content"
             android:text="@string/menit30"
             tools:layout_editor_absoluteX="32dp"
-            tools:layout_editor_absoluteY="214dp" />
+            tools:layout_editor_absoluteY="214dp"/>
 
         <RadioButton
             android:id="@+id/radio3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/menit"
-            tools:layout_editor_absoluteX="33dp"
-            tools:layout_editor_absoluteY="236dp" />
-
+            android:text="@string/jam"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="236dp"/>
     </RadioGroup>
 
     <Button
@@ -86,9 +85,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.519"
-        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        app:layout_constraintVertical_bias="0.568" />
+        app:layout_constraintVertical_bias="0.568"/>
 
     <Button
         android:id="@+id/btnUnset"
@@ -99,12 +98,12 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="152dp"
+        android:layout_marginBottom="160dp"
         android:text="@string/Unset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.519"
-        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSet"
         app:layout_constraintVertical_bias="1.0"/>
 
