@@ -75,6 +75,14 @@
             android:layout_marginBottom="94dp"
             android:text="@string/name"
             android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ini adalah text view"
+            android:textSize="12pt"
+            android:textStyle="bold|italic"/>
+
+
         <EditText
             android:id="@+id/editTextName"
             android:layout_width="wrap_content"

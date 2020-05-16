@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ExerciseMusicPlayer</string>
+    <string name="action_shuffle"> Rand </string>
+    <string name="action_end"> End</string>
+</resources>
