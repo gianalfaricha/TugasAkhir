@@ -1,4 +1,4 @@
-package com.example.cerdascermatagamaislam;
+package com.example.cerdascermatagama;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.cerdascermatagamaislam", appContext.getPackageName());
+        assertEquals("com.example.cerdascermatagama", appContext.getPackageName());
     }
 }

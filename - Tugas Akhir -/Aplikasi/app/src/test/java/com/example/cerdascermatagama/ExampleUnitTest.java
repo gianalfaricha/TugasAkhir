@@ -1,4 +1,4 @@
-package com.example.cerdascermatagamaislam;
+package com.example.cerdascermatagama;
 
 import org.junit.Test;
 
