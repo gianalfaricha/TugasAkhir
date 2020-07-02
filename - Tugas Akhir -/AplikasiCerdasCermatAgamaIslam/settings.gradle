@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='Aplikasi Cerdas Cermat Agama Islam'
